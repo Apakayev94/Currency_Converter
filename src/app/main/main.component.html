@@ -1,0 +1,32 @@
+<main>
+    <div class="container-main">
+        <p class="main-text">{{ enterText }}</p>
+        <input class="amount-input" type="text" [(ngModel)]="inputLineFrom" (input)="onInputFromChanged()" onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');">
+        <select class="select-currency" #currencyFrom (change)="onSelectedFrom(currencyFrom.value)">
+            <option default>{{ textUAH }}</option>
+            <option>{{ textUSD }}</option>
+            <option>{{ textEUR }}</option>
+        </select>
+        <p></p>
+        <p class="main-text">{{ wantText }}</p>
+        <div class="wrapper">
+            <input class="radio-button" id="radioBuy" type="radio" (change)="onRadioBuyChanged($event)" name="radio" checked>
+            <input class="radio-button" id="radioSell" type="radio" (change)="onRadioSellChanged($event)" name="radio">
+            <label class="option radioBuy" for="radioBuy">
+                <div class="dot"></div>
+                <span>{{ radioBuyText }}</span>
+                </label>
+            <label class="option radioSell" for="radioSell">
+                <div class="dot"></div>
+                <span>{{ radioSellText }}</span>
+            </label>
+        </div>
+        <p class="main-text">{{ gettingText }}</p>
+        <input class="amount-input" type="text" [(ngModel)]="inputLineTo" (input)="onInputToChanged()" onkeyup="this.value = this.value.replace(/[^0-9.]/g, '');">
+        <select class="select-currency" #currencyTo (change)="onSelectedTo(currencyTo.value)">
+            <option default>{{ textUAH }}</option>
+            <option>{{ textUSD }}</option>
+            <option>{{ textEUR }}</option>
+        </select>
+    </div>
+</main>

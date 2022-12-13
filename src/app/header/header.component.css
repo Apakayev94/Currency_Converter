@@ -1,0 +1,32 @@
+.container-header {
+    height: auto;
+    width: 800px;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    border-width: 0px 3px 0px 3px;
+    border-style: solid solid solid solid;
+    border-color: #000000e0;
+}
+
+.container-header {
+    margin-top: 20px;
+    background-color: #000000e0;
+}
+
+.header-text {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 330px;
+    margin-bottom: 15px;
+}
+
+.header-currency {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 580px;
+    margin-bottom: 15px;
+}
