@@ -13,7 +13,7 @@ export class footerComponents {
   
   codeWroteText = "Code wrote: Apakaev Aleksandr";
   forCompanyText = "For company: ITOP1000";
-  dateText = "Date: 04 december 2022";
+  dateText = "Date: 13 december 2022";
   wishText = "Wish you have a nice day!";
   
 }
